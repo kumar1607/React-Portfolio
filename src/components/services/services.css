@@ -1,0 +1,172 @@
+.services_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    font-size: 3rem;
+
+}
+
+.service{
+    background: var(--color-bg-varient);
+    border-radius:  2rem 2rem;
+    border: 1px solid var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+}
+
+.service:hover{
+    background: transparent;
+    border-color: var(--color-primary-varient);
+    cursor:default;
+}
+
+.service_head{
+    /* background: var(--color-primary); */
+    background: rgb(117, 117, 199);
+    padding: 2rem;
+    border-radius: 2rem 2rem ;
+   box-shadow: 0 2rem 1rem black;
+}
+
+.service_head h3{
+    color: var(--color-bg);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service_list{
+    padding: 2rem;
+}
+
+.service_list li{
+    display: flex;
+    gap: 1rem;
+
+    margin-bottom: 0.8rem;
+
+}
+
+.service_list-icon{
+    color: var(--color-primary);
+    margin-top: 2px;
+}
+
+.service_list p{
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:1024px){
+    .services_container{
+        grid-template-columns: 1fr 1fr ;
+        gap: 2rem;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+    .services_container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+} 
+
+
+
+/* Education Section Design */
+/* .education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column {
+    
+    flex: 1 1 40rem;
+}
+.education-row .education-box{
+    position: relative;
+
+}
+
+.education-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.education-column .education-box {
+    border-left: .2rem solid red;
+}
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.9rem;
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    border-radius: 100%;
+}
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid red;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+}
+
+.education-content .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .content:hover:before {
+    width: 100%;
+
+}
+
+.education-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.education-content .content .year i {
+    padding-right: .5rem;
+}
+
+.education-content .content h3 {
+    font-size: 2rem;
+}
+
+.education-content .content p {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+} */
